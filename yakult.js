@@ -1,0 +1,17 @@
+// Function to check if any element has the specific style
+        function checkStylePresence() {
+            var elements = document.querySelectorAll('[style*="height: auto !important;"]');
+
+            // Check if any elements with the style exist
+            if (elements.length > 0) {
+                // Elements with the style are present, do nothing or perform some action
+                console.log('Elements with the style are present');
+            } else {
+                // Elements with the style are not present, redirect to /error/403
+                console.log('Elements with the style are not present. Redirecting...');
+                window.location.href = '/error/403'; // Change this URL to your desired error page
+            }
+        }
+
+        // Call the function when the page loads
+        window.onload = checkStylePresence;
