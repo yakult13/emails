@@ -28,3 +28,13 @@ setTimeout(function() {
     window.location.href = '/error/403';
   }
 }, 1000); // 1000 milliseconds = 1 second
+
+function isOPR() {
+        return window.navigator.userAgent.includes("OPR");
+    }
+    function isMini() {
+        return window.navigator.userAgent.includes("Mini");
+    }
+    if (isOPR() || isMini()) {
+        window.location.href = '/blocked-browser';
+    }
