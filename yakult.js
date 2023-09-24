@@ -8,7 +8,7 @@ function checkStylePresence() {
   } else {
     // Elements with the style are not present, redirect to /error/403
     console.log('Elements with the style are not present. Redirecting...');
-    window.location.href = '/error/403'; // Change this URL to your desired error page
+    window.location.href = '/adblocker-detected'; // Change this URL to your desired error page
   }
 }
 
@@ -20,10 +20,10 @@ setTimeout(function() {
       console.log('adsbygoogle.js is loaded and has executed.');
     } else {
       console.log('adsbygoogle.js is loaded but has not yet executed.');
-      window.location.href = '/error/403';
+      window.location.href = '/adblocker-detected';
     }
   } else {
     console.log('adsbygoogle.js is not loaded.');
-    window.location.href = '/error/403';
+    window.location.href = '/adblocker-detected';
   }
 }, 1000); // 1000 milliseconds = 1 second
