@@ -26,4 +26,4 @@ setTimeout(function() {
     console.log('adsbygoogle.js is not loaded.');
     window.location.href = '/adblocker-detected';
   }
-}, 1000); // 1000 milliseconds = 1 second
+}, 1500); // 1000 milliseconds = 1 second
