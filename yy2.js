@@ -16,7 +16,7 @@
           const unfilledCount = unfilledElements.length;
 
           // Check if the count is greater than 1
-          if (unfilledCount > 0) {
+          if (unfilledCount > 1) {
             // Redirect to the '/ads-check' page
             window.location.href = '/ads-check';
           } else {
