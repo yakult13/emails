@@ -16,7 +16,7 @@ setTimeout(function () {
     // Check if the count is greater than 1
     if (unfilledCount > 1) {
       // Redirect to the '/ads-check' page
-      window.location.href = '/ads-check';
+      window.location.href = '/dns-check';
     } else {
       console.log(`Number of elements with data-ad-status="unfilled": ${unfilledCount}`);
     }
